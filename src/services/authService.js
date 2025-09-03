@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create Axios instance with base URL from environment variables
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000',
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8080',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
@@ -211,4 +211,5 @@ export const eventsAPI = {
 };
 
 // Export the configured axios instance for direct use if needed
+
 export default api; 
